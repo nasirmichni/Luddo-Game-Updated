@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: azure;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+
+.container {
+    background-color: burlywood;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    max-width: 370px;
+    height: 530px;
+    position: relative;
+    top: 20px;
+    border: 2px solid white;
+}
+
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.score{
+    color: green;
+    font-weight: bold;
+}
+.number{
+    color:#2a05b3;
+    font-weight: bold;
+}
+
+button {
+    background-color: white;
+    padding: 8px;
+    width: 100%; 
+    max-width: 140px; 
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; 
+    border-radius: 5px;
+}
+button:hover{
+    background-color:bisque;
+}
+
+
+@keyframes verticalSpin {
+    0% { transform: rotateX(0deg); }
+    100% { transform: rotateX(360deg); }
+}
+
+.image {
+    cursor: pointer;
+    width: 230px;
+    height: 230px;
+}
+
+.image.spinning {
+    animation: verticalSpin 0.5s linear infinite;
+}
+
+#navbarNav {
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .nav-item {
+    margin-right: 15px; 
+  }
+  .navbar-nav .nav-link:hover {
+    color: #ffcc00;
+  }
+  .navbar-brand {
+    color: rgb(100, 100, 124);
+    font-size: 26px;
+    font-family: 'Dancing Script', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+}
+ 
